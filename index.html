@@ -61,6 +61,6 @@ const slider=document.getElementById('beforeAfterSlider'), layer=document.getEle
 function setPosition(x){const r=slider.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(0,Math.min(100,p));layer.style.width=p+'%';handle.style.left=p+'%'}
 slider.addEventListener('pointerdown',e=>{dragging=true;slider.setPointerCapture(e.pointerId);setPosition(e.clientX)});slider.addEventListener('pointermove',e=>{if(dragging)setPosition(e.clientX)});slider.addEventListener('pointerup',()=>dragging=false);slider.addEventListener('pointercancel',()=>dragging=false);
 document.querySelectorAll('input[type=file]').forEach(input=>input.addEventListener('change',()=>{if(input.files.length>5){alert('Please select no more than 5 photos.');input.value=''}}));
-document.querySelectorAll('.form-panel form').forEach(form=>form.addEventListener('submit',e=>{if(form.action.includes('YOUR_FORM_ENDPOINT')){e.preventDefault();const panel=form.closest('.form-panel');const confirmation=panel.nextElementSibling;panel.classList.remove('open');confirmation.classList.add('show');confirmation.scrollIntoView({behavior:'smooth',block:'center'})}}));
+document.querySelectorAll('.form-panel form').forEach(form=>form.addEventListener('submit'
 </script>
 </body></html>
