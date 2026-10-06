@@ -55,12 +55,5 @@ footer{padding:28px 20px 32px;border-top:1px solid var(--green);text-align:cente
 <section><h2>Quality &amp; Professionalism</h2><div class="gold-accent"></div><div class="quality-grid"><div class="quality-item"><h3>Quality</h3><p>Careful work using professional equipment.</p></div><div class="quality-item"><h3>Professionalism</h3><p>Clear communication and a professional approach.</p></div><div class="quality-item"><h3>Attention to Detail</h3><p>Taking the time to properly address the work being performed.</p></div><div class="quality-item"><h3>Experience</h3><p>Practical experience with pressure washing, surface cleaning, and residential yard maintenance.</p></div></div></section>
 <section><h2>Contact Us</h2><div class="contact-list"><a href="tel:(850) 760-4146">(850) 760-4146</a><a href="mailto:renegadegrenadeproductions@gmail.com">renegadegrenadeproductions@gmail.com</a></div></section>
 </main><footer><p><strong>RG Surface Cleaning</strong></p><p>Escambia County, Florida</p><p><a href="tel:(850) 760-4146">(850) 760-4146</a></p><p><a href="mailto:renegadegrenadeproductions@gmail.com">renegadegrenadeproductions@gmail.com</a></p><p>&copy; 2026 RG Surface Cleaning. All rights reserved.</p></footer></div>
-<script>
-document.querySelectorAll('.form-toggle').forEach(button=>button.addEventListener('click',()=>{const panel=document.getElementById(button.dataset.target);const open=panel.classList.toggle('open');button.setAttribute('aria-expanded',String(open));}));
-const slider=document.getElementById('beforeAfterSlider'), layer=document.getElementById('beforeLayer'), handle=document.getElementById('sliderHandle');let dragging=false;
-function setPosition(x){const r=slider.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(0,Math.min(100,p));layer.style.width=p+'%';handle.style.left=p+'%'}
-slider.addEventListener('pointerdown',e=>{dragging=true;slider.setPointerCapture(e.pointerId);setPosition(e.clientX)});slider.addEventListener('pointermove',e=>{if(dragging)setPosition(e.clientX)});slider.addEventListener('pointerup',()=>dragging=false);slider.addEventListener('pointercancel',()=>dragging=false);
-document.querySelectorAll('input[type=file]').forEach(input=>input.addEventListener('change',()=>{if(input.files.length>5){alert('Please select no more than 5 photos.');input.value=''}}));
-document.querySelectorAll('.form-panel form').forEach(form=>form.addEventListener('submit'
-</script>
+
 </body></html>
